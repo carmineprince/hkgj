@@ -1,0 +1,103 @@
+{
+  "code": 0,
+  "msg": "success",
+  "total": 24,
+  "data": [
+    {
+      "id": 1001,
+      "name": "HK538",
+      "nameEn": "HK538",
+      "mainImg": "https://carmineprince.oss-cn-qingdao.aliyuncs.com/2025/%E7%94%9F%E6%88%90%E8%BD%AE%E8%83%8E%E5%9B%BE%E7%89%87.png",
+      "detailImg": "https://carmineprince.oss-cn-qingdao.aliyuncs.com/2025/%E7%94%9F%E6%88%90%E8%BD%AE%E8%83%8E%E5%9B%BE%E7%89%87.png,https://carmineprince.oss-cn-qingdao.aliyuncs.com/2025/%E7%94%9F%E6%88%90%E8%BD%AE%E8%83%8E%E5%9B%BE%E7%89%87.png",
+      "product": {
+        "name": "HK538 豪华舒适型",
+        "nameEn": "HK538 Luxury Comfort",
+        "detailImg": "https://carmineprince.oss-cn-qingdao.aliyuncs.com/2025/%E7%94%9F%E6%88%90%E8%BD%AE%E8%83%8E%E5%9B%BE%E7%89%87.png,https://carmineprince.oss-cn-qingdao.aliyuncs.com/2025/%E7%94%9F%E6%88%90%E8%BD%AE%E8%83%8E%E5%9B%BE%E7%89%87.png"
+      }
+    },
+    {
+      "id": 1002,
+      "name": "HK668",
+      "nameEn": "HK668",
+      "mainImg": "https://carmineprince.oss-cn-qingdao.aliyuncs.com/2025/%E7%94%9F%E6%88%90%E8%BD%AE%E8%83%8E%E5%9B%BE%E7%89%87.png",
+      "detailImg": "https://carmineprince.oss-cn-qingdao.aliyuncs.com/2025/%E7%94%9F%E6%88%90%E8%BD%AE%E8%83%8E%E5%9B%BE%E7%89%87.png,https://carmineprince.oss-cn-qingdao.aliyuncs.com/2025/%E7%94%9F%E6%88%90%E8%BD%AE%E8%83%8E%E5%9B%BE%E7%89%87.png",
+      "product": {
+        "name": "HK668 全季节轿车轮胎",
+        "nameEn": "HK668 All Season Passenger Tire",
+        "detailImg": "https://carmineprince.oss-cn-qingdao.aliyuncs.com/2025/%E7%94%9F%E6%88%90%E8%BD%AE%E8%83%8E%E5%9B%BE%E7%89%87.png,https://carmineprince.oss-cn-qingdao.aliyuncs.com/2025/%E7%94%9F%E6%88%90%E8%BD%AE%E8%83%8E%E5%9B%BE%E7%89%87.png"
+      }
+    },
+    {
+      "id": 1003,
+      "name": "HK799",
+      "nameEn": "HK799",
+      "mainImg": "https://carmineprince.oss-cn-qingdao.aliyuncs.com/2025/%E7%94%9F%E6%88%90%E8%BD%AE%E8%83%8E%E5%9B%BE%E7%89%87.png",
+      "detailImg": "https://carmineprince.oss-cn-qingdao.aliyuncs.com/2025/%E7%94%9F%E6%88%90%E8%BD%AE%E8%83%8E%E5%9B%BE%E7%89%87.png,https://carmineprince.oss-cn-qingdao.aliyuncs.com/2025/%E7%94%9F%E6%88%90%E8%BD%AE%E8%83%8E%E5%9B%BE%E7%89%87.png",
+      "product": {
+        "name": "HK799 高性能低噪音轮胎",
+        "nameEn": "HK799 High Performance Low Noise Tire",
+        "detailImg": "https://carmineprince.oss-cn-qingdao.aliyuncs.com/2025/%E7%94%9F%E6%88%90%E8%BD%AE%E8%83%8E%E5%9B%BE%E7%89%87.png,https://carmineprince.oss-cn-qingdao.aliyuncs.com/2025/%E7%94%9F%E6%88%90%E8%BD%AE%E8%83%8E%E5%9B%BE%E7%89%87.png"
+      }
+    },
+    {
+      "id": 1004,
+      "name": "HK215",
+      "nameEn": "HK215",
+      "mainImg": "https://carmineprince.oss-cn-qingdao.aliyuncs.com/2025/%E7%94%9F%E6%88%90%E8%BD%AE%E8%83%8E%E5%9B%BE%E7%89%87.png",
+      "detailImg": "https://carmineprince.oss-cn-qingdao.aliyuncs.com/2025/%E7%94%9F%E6%88%90%E8%BD%AE%E8%83%8E%E5%9B%BE%E7%89%87.png,https://carmineprince.oss-cn-qingdao.aliyuncs.com/2025/%E7%94%9F%E6%88%90%E8%BD%AE%E8%83%8E%E5%9B%BE%E7%89%87.png",
+      "product": {
+        "name": "HK215 经济型轮胎",
+        "nameEn": "HK215 Economy Tire",
+        "detailImg": "https://carmineprince.oss-cn-qingdao.aliyuncs.com/2025/%E7%94%9F%E6%88%90%E8%BD%AE%E8%83%8E%E5%9B%BE%E7%89%87.png,https://carmineprince.oss-cn-qingdao.aliyuncs.com/2025/%E7%94%9F%E6%88%90%E8%BD%AE%E8%83%8E%E5%9B%BE%E7%89%87.png"
+      }
+    },
+    {
+      "id": 1005,
+      "name": "HK882",
+      "nameEn": "HK882",
+      "mainImg": "https://carmineprince.oss-cn-qingdao.aliyuncs.com/2025/%E7%94%9F%E6%88%90%E8%BD%AE%E8%83%8E%E5%9B%BE%E7%89%87.png",
+      "detailImg": "https://carmineprince.oss-cn-qingdao.aliyuncs.com/2025/%E7%94%9F%E6%88%90%E8%BD%AE%E8%83%8E%E5%9B%BE%E7%89%87.png,https://carmineprince.oss-cn-qingdao.aliyuncs.com/2025/%E7%94%9F%E6%88%90%E8%BD%AE%E8%83%8E%E5%9B%BE%E7%89%87.png",
+      "product": {
+        "name": "HK882 超静音舒适型",
+        "nameEn": "HK882 Ultra Quiet Comfort",
+        "detailImg": "https://carmineprince.oss-cn-qingdao.aliyuncs.com/2025/%E7%94%9F%E6%88%90%E8%BD%AE%E8%83%8E%E5%9B%BE%E7%89%87.png,https://carmineprince.oss-cn-qingdao.aliyuncs.com/2025/%E7%94%9F%E6%88%90%E8%BD%AE%E8%83%8E%E5%9B%BE%E7%89%87.png"
+      }
+    },
+    {
+      "id": 1006,
+      "name": "HK956",
+      "nameEn": "HK956",
+      "mainImg": "https://carmineprince.oss-cn-qingdao.aliyuncs.com/2025/%E7%94%9F%E6%88%90%E8%BD%AE%E8%83%8E%E5%9B%BE%E7%89%87.png",
+      "detailImg": "https://carmineprince.oss-cn-qingdao.aliyuncs.com/2025/%E7%94%9F%E6%88%90%E8%BD%AE%E8%83%8E%E5%9B%BE%E7%89%87.png,https://carmineprince.oss-cn-qingdao.aliyuncs.com/2025/%E7%94%9F%E6%88%90%E8%BD%AE%E8%83%8E%E5%9B%BE%E7%89%87.png",
+      "product": {
+        "name": "HK956 运动型轮胎",
+        "nameEn": "HK956 Sport Series Tire",
+        "detailImg": "https://carmineprince.oss-cn-qingdao.aliyuncs.com/2025/%E7%94%9F%E6%88%90%E8%BD%AE%E8%83%8E%E5%9B%BE%E7%89%87.png,https://carmineprince.oss-cn-qingdao.aliyuncs.com/2025/%E7%94%9F%E6%88%90%E8%BD%AE%E8%83%8E%E5%9B%BE%E7%89%87.png"
+      }
+    },
+    {
+      "id": 1007,
+      "name": "HK360",
+      "nameEn": "HK360",
+      "mainImg": "https://carmineprince.oss-cn-qingdao.aliyuncs.com/2025/%E7%94%9F%E6%88%90%E8%BD%AE%E8%83%8E%E5%9B%BE%E7%89%87.png",
+      "detailImg": "https://carmineprince.oss-cn-qingdao.aliyuncs.com/2025/%E7%94%9F%E6%88%90%E8%BD%AE%E8%83%8E%E5%9B%BE%E7%89%87.png,https://carmineprince.oss-cn-qingdao.aliyuncs.com/2025/%E7%94%9F%E6%88%90%E8%BD%AE%E8%83%8E%E5%9B%BE%E7%89%87.png",
+      "product": {
+        "name": "HK360 四季通用型",
+        "nameEn": "HK360 All Season",
+        "detailImg": "https://carmineprince.oss-cn-qingdao.aliyuncs.com/2025/%E7%94%9F%E6%88%90%E8%BD%AE%E8%83%8E%E5%9B%BE%E7%89%87.png,https://carmineprince.oss-cn-qingdao.aliyuncs.com/2025/%E7%94%9F%E6%88%90%E8%BD%AE%E8%83%8E%E5%9B%BE%E7%89%87.png"
+      }
+    },
+    {
+      "id": 1008,
+      "name": "HK520",
+      "nameEn": "HK520",
+      "mainImg": "https://carmineprince.oss-cn-qingdao.aliyuncs.com/2025/%E7%94%9F%E6%88%90%E8%BD%AE%E8%83%8E%E5%9B%BE%E7%89%87.png",
+      "detailImg": "https://carmineprince.oss-cn-qingdao.aliyuncs.com/2025/%E7%94%9F%E6%88%90%E8%BD%AE%E8%83%8E%E5%9B%BE%E7%89%87.png,https://carmineprince.oss-cn-qingdao.aliyuncs.com/2025/%E7%94%9F%E6%88%90%E8%BD%AE%E8%83%8E%E5%9B%BE%E7%89%87.png",
+      "product": {
+        "name": "HK520 耐磨静音型",
+        "nameEn": "HK520 Wear-resistant & Quiet",
+        "detailImg": "https://carmineprince.oss-cn-qingdao.aliyuncs.com/2025/%E7%94%9F%E6%88%90%E8%BD%AE%E8%83%8E%E5%9B%BE%E7%89%87.png,https://carmineprince.oss-cn-qingdao.aliyuncs.com/2025/%E7%94%9F%E6%88%90%E8%BD%AE%E8%83%8E%E5%9B%BE%E7%89%87.png"
+      }
+    }
+  ]
+}

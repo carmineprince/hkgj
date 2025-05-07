@@ -1,0 +1,52 @@
+{
+  "code": 0,
+  "msg": "success",
+  "data": [
+    {
+      "productGroup": {
+        "pgroupId": 23,
+        "name": "轿车轮胎",
+        "nameEn": "Passenger Car Tires"
+      },
+      "pgroupTags": [
+        {
+          "tag": {
+            "tagId": 101,
+            "tagName": "舒适型",
+            "tagNameEn": "Comfort Series"
+          }
+        },
+        {
+          "tag": {
+            "tagId": 102,
+            "tagName": "运动型",
+            "tagNameEn": "Sport Series"
+          }
+        }
+      ]
+    },
+    {
+      "productGroup": {
+        "pgroupId": 24,
+        "name": "越野轮胎",
+        "nameEn": "SUV Tires"
+      },
+      "pgroupTags": [
+        {
+          "tag": {
+            "tagId": 103,
+            "tagName": "全地形",
+            "tagNameEn": "All Terrain"
+          }
+        },
+        {
+          "tag": {
+            "tagId": 104,
+            "tagName": "高性能",
+            "tagNameEn": "High Performance"
+          }
+        }
+      ]
+    }
+  ]
+}

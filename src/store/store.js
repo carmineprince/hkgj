@@ -6,7 +6,7 @@ Vue.use(Vuex)
 export const store = new Vuex.Store({
   state: {
     uniqueId: 'A2522EFC1118D13272620CEAE7630AE3',
-    showMethod: window.sessionStorage.getItem('showMethod'),
+    showMethod: 2,
     mainNavState: window.sessionStorage.getItem('mainNavState'),
     subNavState: window.sessionStorage.getItem('subNavState'),
     currentProductItem: window.sessionStorage.getItem('currentProductItem'),

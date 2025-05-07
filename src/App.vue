@@ -11,13 +11,13 @@
                 </div>
                 <div class="layout-nav">
                   <!-- <MenuItem name="7"> -->
-                  <p v-if="this.$store.state.showMethod == 1"
+                  <!-- <p v-if="this.$store.state.showMethod == 1"
                      style="color: white; margin-right: 30px;margin-left:30px;cursor: pointer;position: absolute;top: -40px;right: -2px;font-size: 9px;"
                      @click="touchShowMethod"><span style="color: #FF4141;">中文</span>/EN</p>
                   <p v-else
                      style="color: white; margin-right: 30px;margin-left:30px;cursor: pointer;position: absolute;top: -40px;right: -2px;font-size: 9px;"
                      @click="touchShowMethod">
-                    中文/<span style="color: #FF4141;">EN</span></p>
+                    中文/<span style="color: #FF4141;">EN</span></p> -->
                   <!-- </MenuItem> -->
                   <MenuItem v-if="this.$store.state.showMethod == 1" name="contactUs" to="/contactUs">
                     联系我们
@@ -25,24 +25,24 @@
                   <MenuItem v-else name="contactUs" to="/contactUs">
                     ContactUs
                   </MenuItem>
-                  <MenuItem v-if="this.$store.state.showMethod == 1" name="honor" to="/honor">
+                  <!-- <MenuItem v-if="this.$store.state.showMethod == 1" name="honor" to="/honor">
                     企业荣誉
                   </MenuItem>
                   <MenuItem v-else name="honor" to="/honor">
                     Honor
-                  </MenuItem>
+                  </MenuItem> -->
                   <MenuItem v-if="this.$store.state.showMethod == 1" name="product" to="/product">
                     豪克轮胎
                   </MenuItem>
                   <MenuItem v-else name="product" to="/product">
                     Products
                   </MenuItem>
-                  <MenuItem v-if="this.$store.state.showMethod == 1" name="news" to="/news">
+                  <!-- <MenuItem v-if="this.$store.state.showMethod == 1" name="news" to="/news">
                     新闻动态
                   </MenuItem>
                   <MenuItem v-else name="news" to="/news">
                     News
-                  </MenuItem>
+                  </MenuItem> -->
                   <MenuItem v-if="this.$store.state.showMethod == 1" name="about" to="/about">
                     关于我们
                   </MenuItem>
