@@ -1,6 +1,6 @@
 const path = require('path')
 module.exports = {
-  publicPath: '/hkgj/', // 根路径
+  publicPath: '/', // 根路径
   outputDir: 'docs', // 构建输入目录
   assetsDir: 'assets', // 静态资源目录（js，css,img,fonts）
   lintOnSave: true, // 是否开启eslint保存检测，有效值：true||false||‘error’
