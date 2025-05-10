@@ -517,7 +517,7 @@ export default {
   width: 6px;
   height: 6px;
   border-radius: 6px;
-  background: rgba(255, 0, 0, 1);
+  background: #ff6719;
   display: block;
   float: left;
   margin: 6px 5px;
@@ -533,7 +533,7 @@ export default {
 
 #product-menu .ivu-menu-item:hover,
 .ivu-menu-vertical .ivu-menu-submenu-title:hover {
-  color: #ff4141;
+  color: #ff6719;
 }
 
 #product-menu.ivu-menu-vertical .ivu-menu-item-active:not(.ivu-menu-submenu) {
@@ -559,10 +559,45 @@ export default {
 .ivu-menu-opened .ivu-menu-submenu-title {
   /*background: #FF4141;*/
   /*color: white;*/
-  color: #ff4141;
+  color: #ff6719;
 }
 
 .ivu-breadcrumb a:hover {
-  color: #ff4141;
+  color: #ff6719;
+}
+
+/* pageControl总样式 */
+.ivu-page-item-active {
+  border: 0 !important;
+  border-radius: 0 !important;
+  background-color: #ff6719 !important;
+}
+
+.ivu-page-item-active a {
+  color: white !important;
+}
+
+.ivu-page-item {
+  border-radius: 0 !important;
+}
+
+.ivu-page-item:hover {
+  border-color: #ff6719 !important;
+}
+
+.ivu-page-item:hover a {
+  color: #ff6719 !important;
+}
+
+.ivu-page-item-jump-next a {
+  color: #ff6719 !important;
+}
+
+.ivu-page-next:hover a {
+  color: #ff6719 !important;
+}
+
+.ivu-page-prev:hover a {
+  color: #ff6719 !important;
 }
 </style>
