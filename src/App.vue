@@ -19,12 +19,12 @@
                      @click="touchShowMethod">
                     中文/<span style="color: #FF4141;">EN</span></p> -->
                   <!-- </MenuItem> -->
-                  <MenuItem v-if="this.$store.state.showMethod == 1" name="contactUs" to="/contactUs">
+                  <!-- <MenuItem v-if="this.$store.state.showMethod == 1" name="contactUs" to="/contactUs">
                     联系我们
                   </MenuItem>
                   <MenuItem v-else name="contactUs" to="/contactUs">
                     ContactUs
-                  </MenuItem>
+                  </MenuItem> -->
                   <!-- <MenuItem v-if="this.$store.state.showMethod == 1" name="honor" to="/honor">
                     企业荣誉
                   </MenuItem>
@@ -70,7 +70,7 @@
                   </MenuItem>
                   <!--<p style="float: right;color: white; margin-right: 30px;margin-left:30px;cursor: pointer;"><span-->
                   <!--style="color: #FF4141;">中文</span>/EN</p>-->
-                  <p v-if="this.$store.state.showMethod == 1"
+                  <!-- <p v-if="this.$store.state.showMethod == 1"
                      style="float: right;color: white; margin-right: 30px;margin-left:30px;cursor: pointer;"
                      @click="touchShowMethod"><span
                     style="color: #FF4141;">中文</span>/EN</p>
@@ -78,7 +78,7 @@
                      style="float: right;color: white; margin-right: 30px;margin-left:30px;cursor: pointer;"
                      @click="touchShowMethod">
                     中文/<span
-                    style="color: #FF4141;">EN</span></p>
+                    style="color: #FF4141;">EN</span></p> -->
                 </div>
                 <Drawer :closable="false" v-model="value1" :styles="styles">
                   <Menu theme="light"
@@ -99,30 +99,30 @@
                     <MenuItem v-else name="about" to="/about">
                       AboutUs
                     </MenuItem>
-                    <MenuItem v-if="this.$store.state.showMethod == 1" name="news" to="/news">
+                    <!-- <MenuItem v-if="this.$store.state.showMethod == 1" name="news" to="/news">
                       新闻动态
                     </MenuItem>
                     <MenuItem v-else name="news" to="/news">
                       News
-                    </MenuItem>
+                    </MenuItem> -->
                     <MenuItem v-if="this.$store.state.showMethod == 1" name="product" to="/product">
                       豪克轮胎
                     </MenuItem>
                     <MenuItem v-else name="product" to="/product">
                       Products
                     </MenuItem>
-                    <MenuItem v-if="this.$store.state.showMethod == 1" name="honor" to="/honor">
+                    <!-- <MenuItem v-if="this.$store.state.showMethod == 1" name="honor" to="/honor">
                       企业荣誉
                     </MenuItem>
                     <MenuItem v-else name="honor" to="/honor">
                       Honor
-                    </MenuItem>
-                    <MenuItem v-if="this.$store.state.showMethod == 1" name="contactUs" to="/contactUs">
+                    </MenuItem> -->
+                    <!-- <MenuItem v-if="this.$store.state.showMethod == 1" name="contactUs" to="/contactUs">
                       联系我们
                     </MenuItem>
                     <MenuItem v-else name="contactUs" to="/contactUs">
                       ContactUs
-                    </MenuItem>
+                    </MenuItem> -->
                   </Menu>
                 </Drawer>
               </Menu>
@@ -339,8 +339,8 @@
               <p class="footer-sitemap-ch">Sitemap</p>
               <div class="footer-nav-container">
                 <div class="footer-nav-item">
-                  <p class="footer-title-sub">AboutUs</p>
-                  <router-link :to="{path:'/about/',query:{activeName:1}}"><p class="footer-nav-to">Company profile</p>
+                  <router-link class="footer-title-sub" :to="{path:'/about/',query:{activeName:1}}">AboutUs</router-link>
+                  <!-- <router-link :to="{path:'/about/',query:{activeName:1}}"><p class="footer-nav-to">Company profile</p>
                   </router-link>
                   <router-link :to="{path:'/about/developmentHistory',query:{activeName:2}}"><p class="footer-nav-to">
                     Development course</p></router-link>
@@ -349,9 +349,9 @@
                   <router-link :to="{path:'/about/compFacility',query:{activeName:4}}"><p class="footer-nav-to">Factory
                     facilities</p></router-link>
                   <router-link :to="{path:'/about/recruitment',query:{activeName:5}}"><p class="footer-nav-to">Talent
-                    Recruitment</p></router-link>
+                    Recruitment</p></router-link> -->
                 </div>
-                <div class="footer-nav-item">
+                <!-- <div class="footer-nav-item">
                   <p class="footer-title-sub">News</p>
                   <router-link :to="{path:'/news/',query:{activeName:1}}"><p class="footer-nav-to">Corporate video</p>
                   </router-link>
@@ -359,16 +359,16 @@
                     hotspots</p></router-link>
                   <router-link :to="{path:'/news/biddingActivities',query:{activeName:3}}"><p class="footer-nav-to">
                     Bidding activities</p></router-link>
-                </div>
+                </div> -->
                 <div class="footer-nav-item">
-                  <p class="footer-title-sub">Product Display</p>
-                  <p class="footer-nav-to" @click="touchSection4ItemAction(23)">Hawk Series</p>
+                  <router-link class="footer-title-sub" :to="{path:'/product/',query:{activeName:1}}">Product Display</router-link>
+                  <!-- <p class="footer-nav-to" @click="touchSection4ItemAction(23)">Hawk Series</p>
                   <p class="footer-nav-to" @click="touchSection4ItemAction(22)">SupHawk Series</p>
                   <p class="footer-nav-to" @click="touchSection4ItemAction(21)">Eagle Battle Series</p>
                   <p class="footer-nav-to" @click="touchSection4ItemAction(20)">Eagle Series</p>
-                  <p class="footer-nav-to" @click="touchSection4ItemAction(19)">Shuma Series</p>
+                  <p class="footer-nav-to" @click="touchSection4ItemAction(19)">Shuma Series</p> -->
                 </div>
-                <div class="footer-nav-item">
+                <!-- <div class="footer-nav-item">
                   <p class="footer-title-sub">Honor</p>
                   <router-link :to="{path:'/honor/',query:{activeName:1}}"><p class="footer-nav-to">Technology
                     innovation</p></router-link>
@@ -376,47 +376,47 @@
                     certificate</p></router-link>
                   <router-link :to="{path:'/honor/approve3c',query:{activeName:3}}"><p class="footer-nav-to">3 c
                     authentication</p></router-link>
-                </div>
+                </div> -->
                 <div class="footer-nav-item">
-                  <p class="footer-title-sub">ContactUs</p>
-                  <p class="footer-nav-to">0535-2717088(Domestic sales)</p>
+                  <router-link class="footer-title-sub" :to="{path:'/contactUs/',query:{activeName:1}}">ContactUs</router-link>
+                  <!-- <p class="footer-nav-to">0535-2717088(Domestic sales)</p>
                   <p class="footer-nav-to">0535-2717088(Domestic sales)</p>
                   <p class="footer-nav-to">0535-2717088(Domestic sales)</p>
                   <p class="footer-nav-to">6528464@163.com (Email）</p>
                   <p class="footer-nav-to">6528464@163.com (Email）</p>
-                  <p class="footer-nav-to">6528464@163.com (Email）</p>
+                  <p class="footer-nav-to">6528464@163.com (Email）</p> -->
                 </div>
               </div>
             </Col>
-            <Col :xl="{span:4,offset:2}" :md="{span: 22, offset:1}" :xs="{span: 22, offset:1}">
+            <!-- <Col :xl="{span:4,offset:2}" :md="{span: 22, offset:1}" :xs="{span: 22, offset:1}">
               <p class="footer-gongzhong-ch">Hawk Public Number</p>
               <img class="footer-c-img" src="./assets/erweima.png"/>
-            </Col>
+            </Col> -->
           </Row>
           <Row style="max-width: 1200px;margin: 0 auto; margin-top: 73px;margin-bottom: 20px">
             <Col :xl="{span:9,offset:2}" :md="{span: 22, offset:1}" :xs="{span: 22, offset:1}">
-              <span class="footer-bottom-first">Address：</span><span
-              class="footer-bottom-secd">Phoenix Industrial Park, Laizhou Economic and Technological Development Zone, Yantai City, Shandong Province</span>
+              <span class="footer-bottom-first"></span><span
+              class="footer-bottom-secd"></span>
             </Col>
             <Col :xl="{span:5,offset:1}" :md="{span: 22, offset:1}" :xs="{span: 22, offset:1}">
-              <span class="footer-bottom-first">Wechat：</span> <span class="footer-bottom-secd">16001332175</span>
+              <!-- <span class="footer-bottom-first">Wechat：</span> <span class="footer-bottom-secd">16001332175</span> -->
             </Col>
             <Col :xl="{span:6,offset:1}" :md="{span: 22, offset:1}" :xs="{span: 22, offset:1}">
-              <span class="footer-bottom-first">QQ：</span> <span class="footer-bottom-secd">16001332175</span>
+              <!-- <span class="footer-bottom-first">QQ：</span> <span class="footer-bottom-secd">16001332175</span> -->
             </Col>
           </Row>
         </div>
         <div class="footer-info">
-          鲁ICP备19028032号 Copyright©2019-2022 豪客官网hawkrubber.com 版权所有
+          <!-- 鲁ICP备19028032号 Copyright©2019-2022 豪客官网hawkrubber.com 版权所有 -->
         </div>
-        <a class="qq-online" target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=2215879440&site=qq&menu=yes"><img
-          border="0" src="./assets/qqimg.jpg" alt="点击这里给我发消息" title="点击这里给我发消息" style="width: 70px;height:70px"/></a>
+        <!-- <a class="qq-online" target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=2215879440&site=qq&menu=yes"><img
+          border="0" src="./assets/qqimg.jpg" alt="点击这里给我发消息" title="点击这里给我发消息" style="width: 70px;height:70px"/></a> -->
 
         <!--        <a target="_blank" href=" ">< img border="0" src="http://wpa.qq.com/pa?p=2:2215879440:53" alt="点击这里给我发消息" title="点击这里给我发消息"/></a >-->
-        <div @mouseenter="wechatEnter" @mouseleave="wechatLeave">
+        <!-- <div @mouseenter="wechatEnter" @mouseleave="wechatLeave">
           <img class="wechat-online" src="./assets/wechatimg.jpg">
           <img v-bind:class="{ erweiOnlineE:isEnterWechat}" src="./assets/erweima.png" class="erweiOnline">
-        </div>
+        </div> -->
         <!-- 底部栏目 -->
       </div>
 
@@ -707,13 +707,13 @@ export default {
   .ivu-menu-light.ivu-menu-horizontal .ivu-menu-submenu-active,
   .ivu-menu-light.ivu-menu-horizontal .ivu-menu-submenu:hover {
     color: #FFFFFF;
-    background: red;
+    background: #FF6719;
     border-bottom: 0;
   }
 
   .ivu-menu-light.ivu-menu-vertical .ivu-menu-item-active:not(.ivu-menu-submenu) {
     color: #FFFFFF;
-    background: red;
+    background: #FF6719;
     border-bottom: 0;
   }
 
@@ -729,20 +729,20 @@ export default {
 
   .gradual-line {
     height: 4px;
-    background: red;
-    background: -webkit-linear-gradient(left, black, #FF0000);
+    background: #FF6719;
+    background: -webkit-linear-gradient(left, black, #FF6719);
     /* Safari 5.1 - 6.0 */
-    background: -o-linear-gradient(right, black, #FF0000);
+    background: -o-linear-gradient(right, black, #FF6719);
     /* Opera 11.1 - 12.0 */
-    background: -moz-linear-gradient(right, black, #FF0000);
+    background: -moz-linear-gradient(right, black, #FF6719);
     /* Firefox 3.6 - 15 */
-    background: linear-gradient(to right, black, #FF0000);
+    background: linear-gradient(to right, black, #FF6719);
     /* 标准的语法 */
   }
 
   .line-red {
     height: 4px;
-    background: #FF0000;
+    background: #FF6719;
   }
 
   .ivu-menu-light.ivu-menu-vertical .ivu-menu-item-active:not(.ivu-menu-submenu):after {
@@ -878,13 +878,14 @@ export default {
   .leaveMsgButton {
     width: 100%;
     height: 42px;
-    background: -webkit-linear-gradient(left, #FF0000, #FF4141);
+    background: #FF6719;
+    background: -webkit-linear-gradient(left, #FF6719, #FF6719);
     /* Safari 5.1 - 6.0 */
-    background: -o-linear-gradient(right, #FF0000, #FF4141);
+    background: -o-linear-gradient(right, #FF6719, #FF6719);
     /* Opera 11.1 - 12.0 */
-    background: -moz-linear-gradient(right, #FF0000, #FF4141);
+    background: -moz-linear-gradient(right, #FF6719, #FF6719);
     /* Firefox 3.6 - 15 */
-    background: linear-gradient(right, #FF0000, #FF4141);
+    background: linear-gradient(right, #FF6719, #FF6719);
     border-radius: 59px;
     font-size: 16px;
     font-family: PingFangSC-Light;
@@ -899,13 +900,14 @@ export default {
   .leaveMsgButton:hover {
     width: 100%;
     height: 42px;
-    background: -webkit-linear-gradient(left, #FF0000, #FF4141);
+    background: #FF6719;
+    background: -webkit-linear-gradient(left, #FF6719, #FF6719);
     /* Safari 5.1 - 6.0 */
-    background: -o-linear-gradient(right, #FF0000, #FF4141);
+    background: -o-linear-gradient(right, #FF6719, #FF6719);
     /* Opera 11.1 - 12.0 */
-    background: -moz-linear-gradient(right, #FF0000, #FF4141);
+    background: -moz-linear-gradient(right, #FF6719, #FF6719);
     /* Firefox 3.6 - 15 */
-    background: linear-gradient(right, #FF0000, #FF4141);
+    background: linear-gradient(right, #FF6719, #FF6719);
     border-radius: 59px;
     font-size: 16px;
     font-family: PingFangSC-Light;
@@ -1023,7 +1025,7 @@ export default {
     font-size: 24px;
     font-family: MicrosoftYaHei-Bold;
     font-weight: bold;
-    color: rgba(250, 27, 27, 1);
+    color: #FF6719;
     /*margin-left: 50px;*/
     margin-top: 73px;
   }
@@ -1041,7 +1043,7 @@ export default {
     font-size: 24px;
     font-family: MicrosoftYaHei-Bold;
     font-weight: bold;
-    color: rgba(250, 27, 27, 1);
+    color: #FF6719;
     margin-top: 73px;
   }
 
@@ -1113,7 +1115,7 @@ export default {
   }
 
   .ivu-page-item:hover {
-    border-color: #FF4141 !important;
+    border-color: #FF6719 !important;
   }
 
   .ivu-page-item:hover a {
@@ -1121,15 +1123,15 @@ export default {
   }
 
   .ivu-page-item-jump-next a {
-    color: #FF4141 !important;
+    color: #FF6719 !important;
   }
 
   .ivu-page-next:hover a {
-    color: #FF4141 !important;
+    color: #FF6719 !important;
   }
 
   .ivu-page-prev:hover a {
-    color: #FF4141 !important;
+    color: #FF6719 !important;
   }
 
   .ivu-menu-light.ivu-menu-horizontal .ivu-menu-item, .ivu-menu-light.ivu-menu-horizontal .ivu-menu-submenu {
@@ -1147,7 +1149,7 @@ export default {
   }
 
   .ivu-carousel-dots .ivu-carousel-active button {
-    background: red !important;
+    background: #FF6719 !important;
     width: 20px !important;
   }
 

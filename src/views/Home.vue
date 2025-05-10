@@ -308,71 +308,43 @@
           </Col>
         </Row>
         <Row style="width: 100%">
-          <Col class="s3-gy-d-col" :md="24" :lg="24" :xl="15">
-            <!--            <div>-->
-
-            <!--            </div>-->
+          <Col class="s3-gy-d-col" :md="24" :lg="24" :xl="24">
             <div class="s3-gy-bg wow fadeInRight">
-              <video-player
-                class="video-player vjs-custom-skin"
-                ref="videoPlayer"
-                :playsinline="true"
-                :options="playerOptions"
-              ></video-player>
-              <div class="s3-line-red"></div>
-              <img
-                src="../assets/guanyuwomen_bg-t.jpg"
-                style="width: 100%;height: 0;"
-                class="wow fadeInRight"
-              />
+              <p class="comp-intro-content">
+                Shandong Yuanfeng Tire Co., Ltd was established in 2015, mainly
+                engaged in the production and sales of Steel radial tires. The
+                company is based on "green and low-carbon development", adheres
+                to "intelligent manufacturing", and produces equipment
+              </p>
+              <p class="comp-intro-content">
+                The preparation, inspection and testing equipment and
+                instruments are at the leading level in China. The company has
+                fully introduced "6S" management, Strict production process
+                flow, from raw material procurement, production processing to
+                tire sales, after-sales service, etc Adopting an ERP system for
+                control, effectively allocating resources, greatly reducing
+                costs, and improving product quality Quantity and production
+                efficiency.
+              </p>
+              <p class="comp-intro-content">
+                The company adheres to market-oriented, customer-centric,
+                innovation driven development, and quality oriented approach
+                Life, R&D and production of low rolling resistance tires,
+                ultra-high mileage tires, fuel-efficient and environmentally
+                friendly tires, and running tires Pneumatic tires (safety tires)
+                and "intelligent tires" are suitable for various complex road
+                conditions, with high quality Affordable, wear-resistant and
+                durable, safe and environmentally friendly, deeply trusted by
+                users.
+              </p>
+              <p class="comp-intro-content">
+                The company will continue to strengthen cooperation with
+                well-known universities and research institutes both
+                domestically and internationally, focusing on improving We
+                strive to build an Industry 4.0 smart factory with independent
+                innovation capabilities and core competitiveness.
+              </p>
             </div>
-          </Col>
-          <Col
-            class="recruitment-col wow fadeInRight"
-            :xs="{ span: 20, offset: 2 }"
-            :md="{ span: 20, offset: 2 }"
-            :lg="{ span: 22, offset: 2 }"
-            :xl="{ span: 9, offset: 0 }"
-          >
-            <p
-              v-if="this.$store.state.showMethod == 1"
-              class="c2-title s1-title-black "
-            >
-              人才招聘&nbsp;<span style="font-weight: bolder;color: #000000;"
-                >Recruitment</span
-              >
-            </p>
-            <p v-else class="c2-title wow fadeInLeft">Recruitment</p>
-            <p class="recruitment-p" v-for="(item, index) in articleData2">
-              <span>{{ item.created_at.split(" ")[0] }}</span>
-              <router-link
-                :to="{
-                  path: '/about/Recruitment',
-                  query: {
-                    activeName: 5,
-                    isDetail: 1,
-                    articleId: item.articleId
-                  }
-                }"
-                class="recruitment-title"
-                >{{ item.title }}
-              </router-link>
-            </p>
-            <Button
-              v-if="this.$store.state.showMethod == 1"
-              class="c1-pd-detail-btn  wow fadeInRight"
-              type="error"
-              @click="touchMoreReAction"
-            >
-              查看更多
-            </Button>
-            <Button
-              v-else
-              class="c1-pd-detail-btn  wow fadeInRight"
-              type="error"
-              @click="touchMoreReAction"
-              >MORE +
-            </Button>
           </Col>
         </Row>
       </div>
@@ -850,7 +822,7 @@ export default {
 }
 
 #product-swiper-pagination .swiper-pagination-bullet-active {
-  background: #ff2a2a;
+  background: #ff6719;
 }
 
 #product-swiper-pagination .swiper-pagination-bullet {
@@ -859,7 +831,7 @@ export default {
 }
 
 #news-swiper-pagination .swiper-pagination-bullet-active {
-  background: #ff2a2a;
+  background: #ff6719;
 }
 
 #news-swiper-pagination .swiper-pagination-bullet {
@@ -1044,20 +1016,20 @@ export default {
   margin-top: 48px;
   background: -webkit-linear-gradient(
     left,
-    #ff0000,
-    #ff4141
+    #ff6719,
+    #ff6719
   ); /* Safari 5.1 - 6.0 */
   background: -o-linear-gradient(
     right,
-    #ff0000,
-    #ff4141
+    #ff6719,
+    #ff6719
   ); /* Opera 11.1 - 12.0 */
   background: -moz-linear-gradient(
     right,
-    #ff0000,
-    #ff4141
+    #ff6719,
+    #ff6719
   ); /* Firefox 3.6 - 15 */
-  background: linear-gradient(to right, #ff0000, #ff4141);
+  background: linear-gradient(to right, #ff6719, #ff6719);
   border: 0;
   cursor: pointer;
   display: flex;
@@ -1194,22 +1166,11 @@ export default {
   margin-right: 28px;
   border-radius: 0;
   border-width: 0;
-  background: -webkit-linear-gradient(
-    left,
-    #ff0000,
-    #ff4141
-  ); /* Safari 5.1 - 6.0 */
-  background: -o-linear-gradient(
-    right,
-    #ff0000,
-    #ff4141
-  ); /* Opera 11.1 - 12.0 */
-  background: -moz-linear-gradient(
-    right,
-    #ff0000,
-    #ff4141
-  ); /* Firefox 3.6 - 15 */
-  background: linear-gradient(to right, #ff0000, #ff4141);
+  background: #ff6719;
+  background: -webkit-linear-gradient(left, #ff6719, #ff6719);
+  background: -o-linear-gradient(right, #ff6719, #ff6719);
+  background: -moz-linear-gradient(right, #ff6719, #ff6719);
+  background: linear-gradient(to right, #ff6719, #ff6719);
 }
 
 .product-item {
@@ -1287,7 +1248,7 @@ export default {
   width: 60px;
   height: 1px;
   position: absolute;
-  background: red;
+  background: #ff6719;
   left: 50%;
   margin-left: -30px;
 }
@@ -1314,20 +1275,20 @@ export default {
 }
 
 .s2-xw-col:hover .s2-xw-info-div {
-  background-color: #ff2a2a;
+  background-color: #ff6719;
 }
 
 .s2-xw-col:hover .s2-xw-date {
-  color: white;
+  color: #ff6719;
 }
 
 .s2-xw-col:hover .s2-xw-title {
-  color: white;
+  color: #ff6719;
 }
 
 .s2-xw-col:hover .s2-xw-detail {
-  color: #000000;
-  background-color: white;
+  color: #ff6719;
+  background-color: #fff;
   border-radius: 15px;
 }
 
@@ -1399,8 +1360,8 @@ export default {
   font-size: 10px;
   font-family: SourceHanSansCN-Regular;
   font-weight: 400;
-  color: white;
-  background-color: #ff1919;
+  color: #ff6719;
+  background-color: #ff6719;
   cursor: pointer;
   transition: background-color 0.5s;
   -moz-transition: background-color 0.5s; /* Firefox 4 */
@@ -1447,7 +1408,7 @@ export default {
 .s3-line-red {
   height: 0px;
   width: 100%;
-  background: rgba(255, 0, 0, 1);
+  background: rgba(255, 103, 25, 1);
   /*transform: skewX(10deg);*/
   margin-left: -80px;
 }
@@ -1490,22 +1451,11 @@ export default {
   width: 80px;
   border: 0;
   border-radius: 0;
-  background: -webkit-linear-gradient(
-    left,
-    #ff0000,
-    #ff4141
-  ); /* Safari 5.1 - 6.0 */
-  background: -o-linear-gradient(
-    right,
-    #ff0000,
-    #ff4141
-  ); /* Opera 11.1 - 12.0 */
-  background: -moz-linear-gradient(
-    right,
-    #ff0000,
-    #ff4141
-  ); /* Firefox 3.6 - 15 */
-  background: linear-gradient(to right, #ff0000, #ff4141);
+  background: #ff6719;
+  background: -webkit-linear-gradient(left, #ff6719, #ff6719);
+  background: -o-linear-gradient(right, #ff6719, #ff6719);
+  background: -moz-linear-gradient(right, #ff6719, #ff6719);
+  background: linear-gradient(to right, #ff6719, #ff6719);
   margin-top: 10px;
   margin-bottom: 20px;
 }
@@ -1515,6 +1465,17 @@ export default {
 }
 
 .recruitment-title:hover {
-  color: #ff0000;
+  color: #ff6719;
+}
+
+.ivu-carousel-dots .ivu-carousel-active button {
+  background: #ff6719 !important;
+  width: 20px;
+}
+.comp-intro-content {
+  font-size: 16px;
+  line-height: 24px;
+  color: #333;
+  margin-bottom: 20px;
 }
 </style>

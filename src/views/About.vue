@@ -15,27 +15,7 @@
         <h1 v-if="this.$store.getters.getShowMethod == 1" class="page-title">关于我们</h1>
         <h1 v-else class="page-title">About Us</h1>
         <Row class="about-row">
-          <Col class="about-col-silder" :md="24" :lg="6" :xl="5" :xxl="4">
-            <div v-if="this.$store.getters.getShowMethod == 1">
-              <Menu :active-name="activeName" width="auto" ref="side_menu">
-                <MenuItem name="1" to="/about/">公司简介</MenuItem>
-                <MenuItem name="2" to="/about/developmentHistory">发展历程</MenuItem>
-                <MenuItem name="3" to="/about/enterpriseCulture">企业文化</MenuItem>
-                <MenuItem name="4" to="/about/compFacility">厂区设施</MenuItem>
-                <MenuItem name="5" to="/about/recruitment">人才招聘</MenuItem>
-              </Menu>
-            </div>
-            <div v-else>
-              <Menu :active-name="activeName" width="auto" ref="side_menu">
-                <MenuItem name="1" to="/about/">Company profile</MenuItem>
-                <MenuItem name="2" to="/about/developmentHistory">Development course</MenuItem>
-                <MenuItem name="3" to="/about/enterpriseCulture">Enterprise culture</MenuItem>
-                <MenuItem name="4" to="/about/compFacility">Factory facilities</MenuItem>
-                <MenuItem name="5" to="/about/recruitment">Talent Recruitment</MenuItem>
-              </Menu>
-            </div>
-          </Col>
-          <Col :md="24" :lg="{span:'17',offset:'1'}" :xl="{span:'18',offset:'1'}" :xxl="{span:'19',offset:'1'}"
+          <Col :md="24" :lg="24" :xl="24" :xxl="24"
                class="s1-content-col">
             <router-view/>
           </Col>
@@ -82,7 +62,7 @@ export default {
     this.$nextTick(() => {
       this.$refs.side_menu.updateActiveName()
     })
-  },
+  }
 
 }
 </script>
