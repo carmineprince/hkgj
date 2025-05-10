@@ -7,7 +7,7 @@
             <div v-show="screenWidth >= 992" style="max-width: 1922px;margin: 0 auto;">
               <Menu mode="horizontal" theme="light" :active-name="this.$store.state.mainNavState" @on-select="onSelect">
                 <div class="layout-logo">
-                  <img class="brand-img" src="./assets/09012logo.png">
+                  <img class="brand-img" src="@/assets/company-logo.png">
                 </div>
                 <div class="layout-nav">
                   <!-- <MenuItem name="7"> -->
@@ -62,7 +62,7 @@
               <Menu mode="horizontal" theme="light" @on-select="value1 = !value1" active-name="1">
                 <div class="layout-logo">
 <!--                  <img class="brand-img-sm" src="./assets/redLogo_240*64.png">-->
-                  <img class="brand-img-sm" src="./assets/09012logo.png">
+                  <img class="brand-img-sm" src="@/assets/company-logo.png">
                 </div>
                 <div class="layout-nav">
                   <MenuItem name="1" style="float: right;">
@@ -674,8 +674,8 @@ export default {
   }
 
   .brand-img {
-    width: 220px;
-    height: 58px;
+    max-width: 220px;
+    max-height: 58px;
     position: absolute;
     z-index: 2;
     top: -35px;
@@ -686,8 +686,8 @@ export default {
   }
 
   .brand-img-sm {
-    width: 130px;
-    height: 34px;
+    max-width: 130px;
+    max-height: 34px;
     position: absolute;
     z-index: 2;
     top: 0;

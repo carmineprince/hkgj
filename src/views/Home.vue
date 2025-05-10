@@ -33,33 +33,33 @@
         <CarouselItem style="position:relative">
           <img
             class="banner-img"
-            src="https://file.codingswifter.com/website/beijing8.jpeg"
+            src="@/assets/home-banner-1.jpg"
             :style="{ height: this.$store.state.screenHeight - 92 + 'px' }"
           />
-          <div
+          <!-- <div
             style="max-width: 1200px;position: absolute;left: 0;right: 0;top: 0;bottom: 0;margin: auto;display: flex;align-items: center;justify-content: flex-start;"
           >
             <img class="banner-img-float4" src="../assets/zi8.png" />
-          </div>
+          </div> -->
         </CarouselItem>
 
         <CarouselItem style="position:relative">
           <img
             class="banner-img"
-            src="https://file.codingswifter.com/website/beijing6.jpeg"
+            src="@/assets/home-banner-2.jpg"
             :style="{ height: this.$store.state.screenHeight - 92 + 'px' }"
           />
-          <div
+          <!-- <div
             style="max-width: 1200px;position: absolute;left: 0;right: 0;top: 0;bottom: 0;margin: auto;display: flex;align-items: center;justify-content: flex-start;"
           >
             <img class="banner-img-float3" src="../assets/zi3.png" />
-          </div>
+          </div> -->
         </CarouselItem>
       </Carousel>
     </div>
 
     <!-- 品牌 -->
-    <div class="section4" style="margin-bottom: 1px">
+    <!-- <div class="section4" style="margin-bottom: 1px">
       <div style="max-width: 1310px;margin: 0 auto;">
         <Row style="width: 100%">
           <Col :xl="{ span: 4, offset: 2 }" :md="6" :sm="12">
@@ -148,7 +148,7 @@
           </Col>
         </Row>
       </div>
-    </div>
+    </div> -->
 
     <!-- 豪克轮胎模块 -->
     <div class="section1" style="display: flex;align-items: center">
@@ -385,6 +385,7 @@ import 'swiper/dist/css/swiper.css'
 import { swiper, swiperSlide } from 'vue-awesome-swiper'
 import axios from 'axios'
 import { WOW } from 'wowjs'
+import projectsData from '../api/projects.json'
 
 export default {
   components: {
@@ -404,18 +405,11 @@ export default {
       },
       swiperOption: {
         autoplay: {
-          delay: 3000, // 自动切换的时间间隔，单位ms
-          stopOnLastSlide: false //  当切换到最后一个slide时停止自动切换
-          // disableOnInteraction: false, //  用户操作swiper之后，是否禁止autoplay。
-          // waitForTransition: true // 等待过渡完毕。自动切换会在slide过渡完毕后才开始计时。
+          delay: 3000,
+          stopOnLastSlide: false
         },
-        // autoplay: 0,
         loop: false,
         autoHeight: false
-        // pagination: {
-        //   el: '.swiper-pagination',
-        //   clickable: true
-        // }
       },
       articleData: [],
       articleData2: [],
@@ -424,28 +418,27 @@ export default {
       productData2: [],
       productData3: [],
       playerOptions: {
-        autoplay: false, // 如果true,浏览器准备好时开始回放。
-        muted: false, // 默认情况下将会消除任何音频。
-        loop: false, // 导致视频一结束就重新开始。
-        preload: 'auto', // 建议浏览器在<video>加载元素后是否应该开始下载视频数据。auto浏览器选择最佳行为,立即开始加载视频（如果浏览器支持）
+        autoplay: false,
+        muted: false,
+        loop: false,
+        preload: 'auto',
         language: 'zh-CN',
-        aspectRatio: '16:9', // 将播放器置于流畅模式，并在计算播放器的动态大小时使用该值。值应该代表一个比例 - 用冒号分隔的两个数字（例如"16:9"或"4:3"）
-        fluid: true, // 当true时，Video.js player将拥有流体大小。换句话说，它将按比例缩放以适应其容器。
+        aspectRatio: '16:9',
+        fluid: true,
         sources: [
           {
             type: 'video/mp4',
             src:
-              'https://file.codingswifter.com/wvideo/%E8%B1%AA%E5%85%8B%E8%BD%AE%E8%83%8E%E5%AE%A3%E4%BC%A0%E7%89%87.mp4' // url地址
+              'https://file.codingswifter.com/wvideo/%E8%B1%AA%E5%85%8B%E8%BD%AE%E8%83%8E%E5%AE%A3%E4%BC%A0%E7%89%87.mp4'
           }
         ],
-        poster: 'https://file.codingswifter.com/hkgj/show.png', // 你的封面地址
-        // width: document.documentElement.clientWidth,
-        notSupportedMessage: '此视频暂无法播放，请稍后再试', // 允许覆盖Video.js无法播放媒体源时显示的默认信息。
+        poster: 'https://file.codingswifter.com/hkgj/show.png',
+        notSupportedMessage: '此视频暂无法播放，请稍后再试',
         controlBar: {
           timeDivider: true,
           durationDisplay: true,
           remainingTimeDisplay: false,
-          fullscreenToggle: true // 全屏按钮
+          fullscreenToggle: true
         }
       }
     }
@@ -453,10 +446,7 @@ export default {
   created: function () {
     this.getArticles()
     this.getArticles2()
-    // this.getArticles3()
     this.getProducts()
-    // this.getProducts2()
-    // this.getProducts3()
     var mainNavState = this.$store.state.mainNavState
     if (mainNavState !== 'home') {
       this.$store.commit('setMainNavState', 'home')
@@ -480,14 +470,9 @@ export default {
     showMethod: function (newQuestion, oldQuestion) {
       this.getArticles()
       this.getArticles2()
-      // this.getArticles3()
       this.getProducts()
-      // this.getProducts2()
-      // this.getProducts3()
     },
     screenWidth: function (newQuestion, oldQuestion) {
-      // console.log('new:', newQuestion)
-      // console.log('old :', oldQuestion)
       if (newQuestion < 768) {
         this.swiper.autoplay.stop()
         this.swiper2.autoplay.stop()
@@ -513,28 +498,18 @@ export default {
      * 鼠标移入产品
      **/
     productMouseenter: function () {
-      // // console.log(this.swiperOption.autoplay)
-      // // console.log('enter product')
-      // this.swiperOption.autoplay = 0
-      // // console.log(this.swiperOption.autoplay)
-      // console.log('鼠标进来了')
       this.swiper.autoplay.stop()
     },
     /**
      * 鼠标移出产品 productMouseout
      **/
     productMouseleave: function () {
-      // console.log('鼠标出去了')
       this.swiper.autoplay.start()
     },
     /**
      * 鼠标移入产品
      **/
     newsMouseenter: function () {
-      // // console.log(this.swiperOption.autoplay)
-      // // console.log('enter product')
-      // this.swiperOption.autoplay = 0
-      // // console.log(this.swiperOption.autoplay)
       this.swiper2.autoplay.stop()
     },
     /**
@@ -619,25 +594,19 @@ export default {
     },
 
     /**
-     * 发送获取产品的请求 website/getProducts
+     * 获取产品数据
      **/
     getProducts: function () {
-      var _this = this
-      var url = 'website_bsm/website/getShowFirstProduct'
-      var data = {
-        websiteId: '4',
-        pageNumber: '1',
-        pageSize: '6',
-        showMethod: this.$store.getters.getShowMethod,
-        uniqueId: 'A2522EFC1118D13272620CEAE7630AE3'
+      if (projectsData.code === 0) {
+        // 只取前6个产品数据
+        this.productData = projectsData.data.slice(0, 6).map(item => ({
+          product: {
+            name: item.name,
+            mainImg: item.mainImg,
+            subtitle: item.product.nameEn
+          }
+        }))
       }
-      axios
-        .get(url, {
-          params: data
-        })
-        .then(function (res) {
-          _this.productData = res.data.data
-        })
     },
 
     /**
@@ -780,7 +749,6 @@ export default {
      * 点击了新闻
      **/
     touchNewsItemAction: function (item) {
-      // console.log('点击了新闻')
       this.$store.commit('setMainNavState', 'news')
       this.$router.push({
         path: '/news/compActivity',
@@ -803,7 +771,6 @@ export default {
      * 鼠标移入banner
      */
     bannerMouseenter () {
-      // console.log('enter')
       this.setting.autoplay = false
     },
 
@@ -811,7 +778,6 @@ export default {
      * 鼠标移除banner
      */
     bannerMouseout () {
-      // console.log('out')
       this.setting.autoplay = true
     },
 

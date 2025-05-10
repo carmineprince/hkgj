@@ -98,6 +98,54 @@
         "nameEn": "HK520 Wear-resistant & Quiet",
         "detailImg": "https://carmineprince.oss-cn-qingdao.aliyuncs.com/2025/%E7%94%9F%E6%88%90%E8%BD%AE%E8%83%8E%E5%9B%BE%E7%89%87.png,https://carmineprince.oss-cn-qingdao.aliyuncs.com/2025/%E7%94%9F%E6%88%90%E8%BD%AE%E8%83%8E%E5%9B%BE%E7%89%87.png"
       }
+    },
+    {
+      "id": 1009,
+      "name": "HK888",
+      "nameEn": "HK888",
+      "mainImg": "https://carmineprince.oss-cn-qingdao.aliyuncs.com/2025/%E7%94%9F%E6%88%90%E8%BD%AE%E8%83%8E%E5%9B%BE%E7%89%87.png",
+      "detailImg": "https://carmineprince.oss-cn-qingdao.aliyuncs.com/2025/%E7%94%9F%E6%88%90%E8%BD%AE%E8%83%8E%E5%9B%BE%E7%89%87.png,https://carmineprince.oss-cn-qingdao.aliyuncs.com/2025/%E7%94%9F%E6%88%90%E8%BD%AE%E8%83%8E%E5%9B%BE%E7%89%87.png",
+      "product": {
+        "name": "HK888 豪华SUV轮胎",
+        "nameEn": "HK888 Luxury SUV Tire",
+        "detailImg": "https://carmineprince.oss-cn-qingdao.aliyuncs.com/2025/%E7%94%9F%E6%88%90%E8%BD%AE%E8%83%8E%E5%9B%BE%E7%89%87.png,https://carmineprince.oss-cn-qingdao.aliyuncs.com/2025/%E7%94%9F%E6%88%90%E8%BD%AE%E8%83%8E%E5%9B%BE%E7%89%87.png"
+      }
+    },
+    {
+      "id": 1010,
+      "name": "HK777",
+      "nameEn": "HK777",
+      "mainImg": "https://carmineprince.oss-cn-qingdao.aliyuncs.com/2025/%E7%94%9F%E6%88%90%E8%BD%AE%E8%83%8E%E5%9B%BE%E7%89%87.png",
+      "detailImg": "https://carmineprince.oss-cn-qingdao.aliyuncs.com/2025/%E7%94%9F%E6%88%90%E8%BD%AE%E8%83%8E%E5%9B%BE%E7%89%87.png,https://carmineprince.oss-cn-qingdao.aliyuncs.com/2025/%E7%94%9F%E6%88%90%E8%BD%AE%E8%83%8E%E5%9B%BE%E7%89%87.png",
+      "product": {
+        "name": "HK777 高性能跑车轮胎",
+        "nameEn": "HK777 High Performance Sports Tire",
+        "detailImg": "https://carmineprince.oss-cn-qingdao.aliyuncs.com/2025/%E7%94%9F%E6%88%90%E8%BD%AE%E8%83%8E%E5%9B%BE%E7%89%87.png,https://carmineprince.oss-cn-qingdao.aliyuncs.com/2025/%E7%94%9F%E6%88%90%E8%BD%AE%E8%83%8E%E5%9B%BE%E7%89%87.png"
+      }
+    },
+    {
+      "id": 1011,
+      "name": "HK666",
+      "nameEn": "HK666",
+      "mainImg": "https://carmineprince.oss-cn-qingdao.aliyuncs.com/2025/%E7%94%9F%E6%88%90%E8%BD%AE%E8%83%8E%E5%9B%BE%E7%89%87.png",
+      "detailImg": "https://carmineprince.oss-cn-qingdao.aliyuncs.com/2025/%E7%94%9F%E6%88%90%E8%BD%AE%E8%83%8E%E5%9B%BE%E7%89%87.png,https://carmineprince.oss-cn-qingdao.aliyuncs.com/2025/%E7%94%9F%E6%88%90%E8%BD%AE%E8%83%8E%E5%9B%BE%E7%89%87.png",
+      "product": {
+        "name": "HK666 经济型SUV轮胎",
+        "nameEn": "HK666 Economy SUV Tire",
+        "detailImg": "https://carmineprince.oss-cn-qingdao.aliyuncs.com/2025/%E7%94%9F%E6%88%90%E8%BD%AE%E8%83%8E%E5%9B%BE%E7%89%87.png,https://carmineprince.oss-cn-qingdao.aliyuncs.com/2025/%E7%94%9F%E6%88%90%E8%BD%AE%E8%83%8E%E5%9B%BE%E7%89%87.png"
+      }
+    },
+    {
+      "id": 1012,
+      "name": "HK555",
+      "nameEn": "HK555",
+      "mainImg": "https://carmineprince.oss-cn-qingdao.aliyuncs.com/2025/%E7%94%9F%E6%88%90%E8%BD%AE%E8%83%8E%E5%9B%BE%E7%89%87.png",
+      "detailImg": "https://carmineprince.oss-cn-qingdao.aliyuncs.com/2025/%E7%94%9F%E6%88%90%E8%BD%AE%E8%83%8E%E5%9B%BE%E7%89%87.png,https://carmineprince.oss-cn-qingdao.aliyuncs.com/2025/%E7%94%9F%E6%88%90%E8%BD%AE%E8%83%8E%E5%9B%BE%E7%89%87.png",
+      "product": {
+        "name": "HK555 全地形轮胎",
+        "nameEn": "HK555 All Terrain Tire",
+        "detailImg": "https://carmineprince.oss-cn-qingdao.aliyuncs.com/2025/%E7%94%9F%E6%88%90%E8%BD%AE%E8%83%8E%E5%9B%BE%E7%89%87.png,https://carmineprince.oss-cn-qingdao.aliyuncs.com/2025/%E7%94%9F%E6%88%90%E8%BD%AE%E8%83%8E%E5%9B%BE%E7%89%87.png"
+      }
     }
   ]
 }

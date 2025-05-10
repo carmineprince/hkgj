@@ -18,7 +18,14 @@
         </h1>
         <h1 v-else class="page-title">Product Display</h1>
         <Row class="about-row">
-          <Col class="col-silder" :md="24" :lg="6" :xl="5" :xxl="4">
+          <Col
+            v-show="false"
+            class="col-silder"
+            :md="24"
+            :lg="6"
+            :xl="5"
+            :xxl="4"
+          >
             <Menu
               id="product-menu"
               width="auto"
@@ -55,9 +62,9 @@
             id="s1-content-col"
             class="s1-content-col"
             :md="24"
-            :lg="{ span: '17', offset: '1' }"
-            :xl="{ span: '18', offset: '1' }"
-            :xxl="{ span: '19', offset: '1' }"
+            :lg="24"
+            :xl="24"
+            :xxl="24"
           >
             <div v-if="isDetail === 0">
               <h2 class="product-tag-title">{{ tagName }}</h2>
@@ -85,8 +92,8 @@
                 v-if="this.$store.getters.getShowMethod == 1"
                 id="comp-activity-page-control"
                 :total="total"
-                prev-text="上一页"
-                next-text="下一页"
+                prev-text="Previous"
+                next-text="Next"
                 class-name="test"
                 @on-change="pageNumberChange"
                 :page-size="8"
@@ -95,8 +102,8 @@
                 v-else
                 id="comp-activity-page-control"
                 :total="total"
-                prev-text="prev"
-                next-text="next"
+                prev-text="Previous"
+                next-text="Next"
                 class-name="test"
                 @on-change="pageNumberChange"
                 :page-size="8"
@@ -171,7 +178,7 @@
   </div>
 </template>
 <script>
-import axios from 'axios'
+// import axios from 'axios'
 import projectGroupData from '../api/projectGroup.json'
 import projectsData from '../api/projects.json'
 
@@ -331,22 +338,15 @@ export default {
     getProducts (tagId) {
       var _this = this
       const res = { data: projectsData }
-      // var url = '/website_bsm/website/getGroupProducts'
-      // var data = {
-      //   uniqueId: this.$store.state.uniqueId,
-      //   showMethod: this.$store.state.showMethod,
-      //   pgroupId: this.pgroupId,
-      //   tagId: this.activeName,
-      //   pageNumber: this.pageNumber,
-      //   pageSize: '8'
-      // }
       if (res.data.code !== 0) {
         this.$Message.info(res.data.msg)
       } else {
-        // console.log(res.data.data)
-        // console.log(res.data.total)
-        _this.dataList = res.data.data
-        _this.total = res.data.total
+        // 实现分页逻辑
+        const pageSize = 8
+        const start = (this.pageNumber - 1) * pageSize
+        const end = start + pageSize
+        _this.dataList = res.data.data.slice(start, end)
+        _this.total = res.data.data.length
       }
     },
     /**
