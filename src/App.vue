@@ -381,8 +381,8 @@
                   <router-link class="footer-title-sub" :to="{path:'/contactUs/',query:{activeName:1}}">ContactUs</router-link>
                   <p class="footer-nav-to" style="margin-top: 10px;">SHANDONG YUANFENG TIRE CO LTD </p>
                   <p class="footer-nav-to">Tel:&nbsp;+86185-606-18843</p>
-                  <p class="footer-nav-to">Web:&nbsp;WWW.YUANFENG-TIRE.COM</p>
-                  <p class="footer-nav-to">Email:&nbsp;erwin@yuanfeng-tire.com</p>
+                  <p class="footer-nav-to">Web:&nbsp;WWW.YUANFENG-TIRE.NET</p>
+                  <p class="footer-nav-to">Email:&nbsp;erwin@yuanfeng-tire.net</p>
                   <!-- <p class="footer-nav-to">6528464@163.com (Email）</p>
                   <p class="footer-nav-to">6528464@163.com (Email）</p> -->
                 </div>
