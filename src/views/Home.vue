@@ -33,7 +33,7 @@
         <CarouselItem style="position:relative">
           <img
             class="banner-img"
-            src="@/assets/home-banner-1.jpg"
+            src="@/assets/home-banner-1.png"
             :style="{ height: this.$store.state.screenHeight - 92 + 'px' }"
           />
           <!-- <div
@@ -46,7 +46,7 @@
         <CarouselItem style="position:relative">
           <img
             class="banner-img"
-            src="@/assets/home-banner-2.jpg"
+            src="@/assets/home-banner-2.png"
             :style="{ height: this.$store.state.screenHeight - 92 + 'px' }"
           />
           <!-- <div

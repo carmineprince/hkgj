@@ -1,7 +1,7 @@
 <template>
   <div class="sub-top-div" style="background-color: black">
     <div style="margin: 0 auto;position: relative;">
-      <img class="banner" src="../assets/banner-3.jpg"/>
+      <img class="banner" src="../assets/banner-3.png"/>
       <!--      <div class="banner-title">Contact Us</div>-->
       <div
         style="max-width: 1200px;position: absolute;left: 0;right: 0;top: 0;bottom: 0;margin: auto;display: flex;align-items: center;justify-content: flex-end;">
